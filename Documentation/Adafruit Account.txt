@@ -1,0 +1,25 @@
+
+
+api:
+https://io.adafruit.com/api/v2/donk970/groups/technotomato-data
+
+#define IO_USERNAME  "donk970"
+#define IO_KEY       "9a90636d9e074cf1b784bafaec24801d"
+
+feed keys:
+technotomato-temperature
+technotomato-humidity
+technotomato-leaf-sensor
+
+{"location":{"lat": 0,"lon": 0,"ele": 0},"feeds":[{"key": "string","value": "string"}],"created_at": "string"}
+
+{url: "https://io.adafruit.com/api/v2/donk970/groups/technotomato-data", body: {{"location":{"lat": 40.32,"lon": 105.5},"feeds":[{"key": "technotomato-temperature","value": "00.0"},{"key": "technotomato-humidity","value": "00.0"},{"key": "technotomato-leaf-sensor","value": "00.0"}],"created_at": "000"}}}
+
+
+//-- send fields for channel to thingspeak
+{destination: "thingspeak", api_key: "G7OER4H5RKBVS7R5", channel: 770064, fields: [201000.00, 23.56, 90.0], status: "everything is going great"}   // 160 chars max
+https://api.thingspeak.com/update?api_key=0HBKAFOUDZY3XCQY&field1=1&field2=2&field3=3&field4=4&field5=5&field6=6&field7=7&field8=8
+
+
+
+{"destination": "thingspeak", "api_key": "G7OER4H5RKBVS7R5", "channel": 770064, "fields": [197670.00, 20.64, 45.62]}
