@@ -1,5 +1,5 @@
 # TechnoTomato
-## The outdoor aeroponic tomato growing system
+## The Outdoor Aeroponic Tomato Growing System
 TechnoTomato is a relatively large, complex, aeroponic project aimed at growing tomatoes aeroponically in an outdoor garden.  As such there are a number of challenges that had to be addressed. 
 
 1. Outdoor environment is unpredictable.
@@ -13,4 +13,8 @@ TechnoTomato is a relatively large, complex, aeroponic project aimed at growing 
    In amongst reading sensors for three or four plants, controlling the valves for those plants, reading ambient air temperature and humidity and root temperature we are also sending data for each plant to a ThingSpeak channel once a minute.
 
 These challenges have led to a combination of hardware and software innovations including a spray system that is easy to replace if it gets clogged, a burried root chamber that stays cool, a more or less modular control board and fully asynchronous, object oriented, state driven Arduino sketch.
+### The Spray System
+The heart of TechnoTomato is the nutrient deliver system and the Arduino that controls spray timing.  Everything else is just supporting this main function.
+#### The Plumbing
+#### The Controller
 
