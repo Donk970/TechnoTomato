@@ -19,7 +19,7 @@ The heart of TechnoTomato is the nutrient deliver system and the Arduino that co
 ##### Parts:
 | Image | Description |
 | --- | --- |
-| ![Pressure Pump][Documentation/Images/Pressure Pump.png] | 100psi Aquatech pressure pump |
+| ![Pressure Pump](Documentation/Images/Pressure Pump.png) | 100psi Aquatech pressure pump |
 
 #### The Controller
 
