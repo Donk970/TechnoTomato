@@ -16,11 +16,11 @@ These challenges have led to a combination of hardware and software innovations 
 ### The Spray System
 The heart of TechnoTomato is the nutrient deliver system and the Arduino that controls spray timing.  Everything else is just supporting this main function.
 #### The Plumbing
-![Pressure Pump](Documentation/Images/Plumbing/Pressure Pump.jpg)
+![Pressure Pump](Documentation/Images/Plumbing/Pressure_Pump.jpg)
 ##### Parts:
 | Image | Description |
 | --- | --- |
-| ![Pressure Pump](Documentation/Images/Plumbing/Pressure Pump.jpg) | 100psi Aquatech pressure pump |
+| ![Pressure Pump](Documentation/Images/Plumbing/Pressure_Pump.jpg) | 100psi Aquatech pressure pump |
 
 #### The Controller
 
