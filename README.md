@@ -22,8 +22,8 @@ The heart of TechnoTomato is the nutrient deliver system and the Arduino that co
 | ![Pressure Pump](Documentation/Images/Plumbing/Pressure_Pump.jpg) | 100psi Aquatech pressure pump |
 | ![Accumulator](Documentation/Images/Plumbing/Accumulator.png) | Accumulator |
 | ![Filter](Documentation/Images/Plumbing/Filter.png) | Filter |
-| ![Valve]('Documentation/Images/Plumbing/1:4" Press Fit Solenoid Valve.png') | Solenoid Valve |
-| ![Spray Nozzle](Documentation/Images/Plumbing/Spray\ Nozzle.png) | Spray Nozzle |
+| ![Valve](<Documentation/Images/Plumbing/1:4" Press Fit Solenoid Valve.png>) | Solenoid Valve |
+| ![Spray Nozzle](<Documentation/Images/Plumbing/Spray\ Nozzle.png>) | Spray Nozzle |
 
 #### The Controller
 
