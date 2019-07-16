@@ -17,7 +17,8 @@ These challenges have led to a combination of hardware and software innovations 
 The heart of TechnoTomato is the nutrient delivery system and the Arduino that controls spray timing.  Everything else is just supporting this main function.
 #### The Plumbing
 ##### Major Parts:
-For a high pressure aeroponic system like TechnoTomato you need components that will operate at about 100psi.  The primary components in the system are a high pressure pump like the Aquatech shown here, a pressure switch that will turn the pump off at 100psi and an accumulator.  
+For a high pressure aeroponic system like TechnoTomato you need components that will operate at about 100psi.  The primary components in the system are a high pressure pump like the Aquatech shown here, a pressure switch that will turn the pump off at 100psi and an accumulator. 
+
 | Image | Description |
 | --- | --- |
 | ![Pressure Pump](Documentation/Images/Plumbing/Pressure_Pump.jpg) | 100psi Aquatech pressure pump |
