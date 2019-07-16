@@ -22,13 +22,14 @@ For a high pressure aeroponic system like TechnoTomato you need components that 
 | Image | Description |
 | --- | --- |
 | ![Pressure Pump](Documentation/Images/Plumbing/Pressure_Pump.jpg) | 100psi Aquatech pressure pump |
-| ![Pressure Switch](<Documentation/Images/Plumbing/1:4" Press Fit Pressure Switch.png>) | Pressure Switch: <br>100psi pressure switch for Aquatech pressure <br>pump.  This ensures that pump actually turns <br>off at desired pressure. |
-| ![Accumulator](Documentation/Images/Plumbing/Accumulator.png) | Accumulator: <br>The accumulator prevents the pump from constantly <br>turning on and off by providing a compressable <br>volume of air that will provide a buffer. |
-| ![Filter](Documentation/Images/Plumbing/Filter.png) | Filter: <br>I use a one micron filter on the TechnoTomato <br>System to prevent small debris from clogging <br>the spray nozzles. One micron is probably <br>over kill, fifty would probably do fine for <br>this purpose.  It is also advisable to put <br>a course filter on the inlet side of the <br>pump to prevent any bit bits of stuff from getting in. |
+| ![Pressure Switch](<Documentation/Images/Plumbing/1:4" Press Fit Pressure Switch.png>) | Pressure Switch: <br>100psi pressure switch for Aquatech pressure pump.  This ensures that pump actually turns off at desired pressure. |
+| ![Accumulator](Documentation/Images/Plumbing/Accumulator.png) | Accumulator: <br>The accumulator prevents the pump from constantly turning on and off by providing a compressable volume of air that will provide a buffer. |
+| ![Filter](Documentation/Images/Plumbing/Filter.png) | Filter: <br>I use a one micron filter on the TechnoTomato System to prevent small debris from clogging the spray nozzles. One micron is probably over kill, fifty would probably do fine for this purpose.  It is also advisable to put a course filter on the inlet side of the pump to prevent any bit bits of stuff from getting in. |
 | ![Valve](<Documentation/Images/Plumbing/1:4" Press Fit Solenoid Valve.png>) | Solenoid Valve: <br>These are a relatively cheap 12v solenoid valves <br>with a 1/4" press fit connector on the inlet and outlet. |
 | ![Spray Nozzle](<Documentation/Images/Plumbing/Spray Nozzle.png>) | Spray Nozzle: <br>The spray nozzles themselves are a pretty <br>standard 0.012” Orifice (0.3 mm) 10/24 UNC <br>brass outdoor misting nozzle which can be <br>had for $10 to $15 for a pack of 32. <br>With the press fit tee they are quite a <br>bit more expensive but the brass nozzle <br>can be taken out of the tee and replaced if it clogs. |
 ##### Other Parts: 
 In addition to the major parts like pump, filter valves etc. you will also need tees, elbows, end caps and reducing couplings to go from 3/8" to 1/4".  
+
 | Image | Description |
 | --- | --- |
 | ![3/8" to 1/4" reducing couple](<Documentation/Images/Plumbing/3:8" to 1:4" Press Fit Reducing Fitting.png>) | 3/8" to 1/4" reducing coupling |
