@@ -14,16 +14,24 @@ TechnoTomato is a relatively large, complex, aeroponic project aimed at growing 
 
 These challenges have led to a combination of hardware and software innovations including a spray system that is easy to replace if it gets clogged, a burried root chamber that stays cool, a more or less modular control board and fully asynchronous, object oriented, state driven Arduino sketch.
 ### The Spray System
-The heart of TechnoTomato is the nutrient deliver system and the Arduino that controls spray timing.  Everything else is just supporting this main function.
+The heart of TechnoTomato is the nutrient delivery system and the Arduino that controls spray timing.  Everything else is just supporting this main function.
 #### The Plumbing
-##### Parts:
+##### Major Parts:
 | Image | Description |
 | --- | --- |
 | ![Pressure Pump](Documentation/Images/Plumbing/Pressure_Pump.jpg) | 100psi Aquatech pressure pump |
+| ![Pressure Switch](<Documentation/Images/Plumbing/1:4" Press Fit Pressure Switch.png>) | 100psi Pressure switch for Aquatech pressure pump |
 | ![Accumulator](Documentation/Images/Plumbing/Accumulator.png) | Accumulator |
 | ![Filter](Documentation/Images/Plumbing/Filter.png) | Filter |
 | ![Valve](<Documentation/Images/Plumbing/1:4" Press Fit Solenoid Valve.png>) | Solenoid Valve |
-| ![Spray Nozzle](<Documentation/Images/Plumbing/Spray\ Nozzle.png>) | Spray Nozzle |
+| ![Spray Nozzle](<Documentation/Images/Plumbing/Spray Nozzle.png>) | Spray Nozzle |
+##### Other Parts: 
+| Image | Description |
+| --- | --- |
+| ![3/8" to 1/4" reducing couple](<Documentation/Images/Plumbing/3:8" to 1:4" Press Fit Reducing Fitting.png>) | 3/8" to 1/4" reducing coupling |
+| ![Elbow](<Documentation/Images/Plumbing/1:4" Press Fit Elbow.png>) | 1/4" Press Fit Elbow |
+| ![Tee](<Documentation/Images/Plumbing/1:4" Press Fit Tee.png>) | 1/4" Press Fit Tee |
+| ![End Cap](<Documentation/Images/Plumbing/1:4" Press End Cap.png>) | 1/4" Press Fit end cap |
 
 #### The Controller
 
