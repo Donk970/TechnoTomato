@@ -21,36 +21,44 @@ const unsigned long k_minute_to_milliseconds = 60000;
 const unsigned long k_second_to_milliseconds = 1000;
 
 const double k_no_value = 1000000;
+const double k_max_temp = 30;
+const double k_min_temp = 20;
+const double k_max_interval = 30;
 
-// return a time in seconds for a spray interval as a function
-// of time
-TimeValue linearTemperatureToTimeFunction(double t) {
+// return a time in seconds for a spray interval as a function of time
+// linear function that drops off linearely between 20 ℃ and 30 ℃ 
+TimeValue linearTemperatureToTimeFunction(double temp) {
     // this function is used to produce a max spray interval in minutes that 
     // is a function of the ambient air temperature.  As the temperature 
     // increases the max spray interval decreases linearely.
-    // at t = 45c (113f) v = 0
-    // at t = 21c (70f) v = 15
-    double v = 0.5 - ((t - 46.0)/1.6);
+    double t = temp;
+    if( t >= k_max_temp ) { return 0; } 
+    if( t < k_min_temp ) { return k_max_interval * 60; }
+
+    // at t = 35 ℃ (95f) v = 0
+    // at t = 20 ℃ (68f) v = 30
+    double v = 0.5 - ((t - k_max_temp)/0.34);
     
     // pin value between zero and thirty minutes
     if( v < 0 ) { v = 0; }
-    else if( v > 30.0 ) { v = 30.0; }
+    else if( v > k_max_interval ) { v = k_max_interval; }
     
     // convert value to seconds and return
     return v * 60.0;
 }
 
+// sqrt function that drops off slowly and then fast between 20 ℃ and 30 ℃ 
 TimeValue sqrtTemperatureToTimeFunction(double temp) {
     // this function is used to produce a max spray interval in minutes that 
     // is a function of the ambient air temperature.  As the temperature 
     // increases the max spray interval decreases linearely.
     // pin temp between 20 ℃ and 37 ℃
     double t = temp;
-    if( t > 37 ) { t = 37; }
-    if( t < 20 ) { t = 20; }
+    if( t >= k_max_temp ) { return 0; } 
+    if( t < k_min_temp ) { return k_max_interval * 60; }
     
-    // gives a non linear output between ~30 at 20 ℃ and ~0 at 37 ℃
-    double v = 45 * sqrt(1 - (t/37));
+    // gives a non linear output between ~30 at 20 ℃ and ~0 at 30 ℃
+    double v = 52 * sqrt(1 - (t/k_max_temp));
     
     // pin output value between zero and thirty minutes
     if( v < 0 ) { v = 0; }
@@ -59,6 +67,43 @@ TimeValue sqrtTemperatureToTimeFunction(double temp) {
     // convert value to seconds and return
     return v * 60.0;
 }
+
+
+// sigmoid function that drops off slow, quick and flattens out between 20 ℃ and 30 ℃ 
+// got the function at https://mycurvefit.com 
+TimeValue sigmoidTemperatureToTimeFunction(double temp) {
+    // this function is used to produce a max spray interval in minutes that 
+    // is a function of the ambient air temperature.  As the temperature 
+    // increases the max spray interval decreases sigmoidally.
+    // pin input temp between 20 ℃ and 35 ℃
+    double t = temp;
+    if( t >= k_max_temp ) { return 0; } 
+    if( t < k_min_temp ) { return k_max_interval * 60; }
+    
+    // gives a sigmoid non linear output between ~30 at 20 ℃ and ~0 at 35 ℃
+    // the sigmoid curve is flat at low temperatures, drops off quicker
+    // from 25 ℃ and 35 ℃ with a value around 4 min at 30 ℃.  This flattens
+    // out again and aproaches 0 beyond 35 ℃.
+    double v = k_max_temp/(1 + pow((t/25), 20));
+    
+    // pin output value between zero and thirty minutes
+    if( v < 0 ) { v = 0; }
+    else if( v > 30.0 ) { v = 30.0; }
+    
+    // convert value to seconds and return
+    return v * 60.0;
+}
+
+
+// add this layer if indirection to make the code cleaner
+// we need to find the right spray interval at 30 ℃ where the plants
+// start showing water stress.
+TimeValue temperatureToSprayInterval(double temp) {
+//    return sqrtTemperatureToTimeFunction(temp); // interval 17 min at 30 ℃ 
+//    return linearTemperatureToTimeFunction(temp); // interval 10 min at 30 ℃ 
+    return sigmoidTemperatureToTimeFunction(temp); // interval ~2 min at 30 ℃ 
+}
+
 
 double scaleFactor( double v ) {
     // v is a fraction ranging from 0 to 1, where 0 is a fully hydrated leaf, 
@@ -70,6 +115,7 @@ double scaleFactor( double v ) {
     else if( res > 1 ) { return 1; }
     return res;
 }
+
 
 // return a time value in seconds
 TimeValue defaultInterval( TimeValue i, double a ) {
@@ -101,6 +147,8 @@ void Plant:: initialize() {
     pinMode(_valvePin, OUTPUT);
     _closeValve();
     _next_default_spray = 0;
+    _last_default_spray = 0;
+    _spray_interval = 0;
     
     // get the calibration data from EEPROM
     loadBoundaryValues();    
@@ -140,7 +188,10 @@ void Plant:: synchronizeEEPROM() {
 }
 
 void Plant:: setAmbientTemperature(double t) {
-    defaultSprayInterval = linearTemperatureToTimeFunction(t);
+    defaultSprayInterval = temperatureToSprayInterval(t);
+
+    _spray_interval = defaultIntervalMillis(defaultSprayInterval, _defaultSprayIntervalAdjustment);
+    _next_default_spray = _last_default_spray + _spray_interval;
 }
 
 
@@ -269,7 +320,9 @@ bool Plant:: _isSensorConnected() {
 bool Plant:: _attemptDefaultSpray() {
     if( _next_default_spray == 0 || millis() > _next_default_spray ) {
         // we've exceeded the default spray interval so trigger a spray
-        _next_default_spray = millis() + defaultIntervalMillis(defaultSprayInterval, _defaultSprayIntervalAdjustment);
+        _last_default_spray = millis();
+        _spray_interval = defaultIntervalMillis(defaultSprayInterval, _defaultSprayIntervalAdjustment);
+        _next_default_spray = _last_default_spray + _spray_interval;
         _openValve();
         return true;
     }
@@ -312,7 +365,9 @@ void Plant:: _closeValve() {
     digitalWrite(_valvePin, HIGH);
 //#endif
     
-    _next_default_spray = millis() + defaultIntervalMillis(defaultSprayInterval, _defaultSprayIntervalAdjustment);
+    _last_default_spray = millis();
+    _spray_interval = defaultIntervalMillis(defaultSprayInterval, _defaultSprayIntervalAdjustment);
+    _next_default_spray = _last_default_spray + _spray_interval;
 }
 
 

@@ -142,6 +142,8 @@ class Plant {
      ************************************************************************************************************
      ************************************************************************************************************/
     unsigned long _next_default_spray;
+    unsigned long _last_default_spray;
+    unsigned long _spray_interval;
     double _defaultSprayIntervalAdjustment = 1.0; // number between 0 and 1 that is multiplied by defaultSprayInterval
     unsigned long _valveCloseTime;
     bool _attemptDefaultSpray();
