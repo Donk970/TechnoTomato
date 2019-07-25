@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D783D8F922EA0335006D05D5 /* AirTemperatureDataPlotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D8F822EA0335006D05D5 /* AirTemperatureDataPlotter.swift */; };
+		D783D8FB22EA04D4006D05D5 /* RootTemperatureDataPlotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D8FA22EA04D4006D05D5 /* RootTemperatureDataPlotter.swift */; };
+		D783D8FD22EA058C006D05D5 /* LeafSensorDataPlotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D8FC22EA058C006D05D5 /* LeafSensorDataPlotter.swift */; };
+		D783D8FF22EA0604006D05D5 /* SprayCycleDataPlotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D8FE22EA0604006D05D5 /* SprayCycleDataPlotter.swift */; };
+		D7F047EC22E7640C0085BC8B /* PlantDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F047EB22E7640C0085BC8B /* PlantDefaultsViewController.swift */; };
+		D7F971B622E507AB00FDD906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F971B522E507AB00FDD906 /* Assets.xcassets */; };
+		D7F971C922E50A6400FDD906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F971C222E50A6400FDD906 /* LaunchScreen.storyboard */; };
+		D7F971CA22E50A6400FDD906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F971C422E50A6400FDD906 /* Main.storyboard */; };
+		D7F971CB22E50A6400FDD906 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F971C622E50A6400FDD906 /* AppDelegate.swift */; };
+		D7F971D422E50B7F00FDD906 /* SensorDataPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F971D322E50B7F00FDD906 /* SensorDataPlotView.swift */; };
+		D7F971E122E520EA00FDD906 /* ThingSpeakChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F971E022E520EA00FDD906 /* ThingSpeakChannel.swift */; };
+		D7F971E922E5337700FDD906 /* Techno_Tomato_Manager_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F971E822E5337700FDD906 /* Techno_Tomato_Manager_Tests.swift */; };
+		D7F971F122E534D600FDD906 /* ThingSpeakChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F971E022E520EA00FDD906 /* ThingSpeakChannel.swift */; };
+		D7F971F922E539A600FDD906 /* TechnoTomatoChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F971F822E539A600FDD906 /* TechnoTomatoChannel.swift */; };
+		D7F971FD22E6278800FDD906 /* PlantDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F971FC22E6278800FDD906 /* PlantDataTableViewController.swift */; };
+		D7F971FF22E629AB00FDD906 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F971FE22E629AB00FDD906 /* PlantTableViewCell.swift */; };
+		D7F9720122E64DD200FDD906 /* TimeScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F9720022E64DD200FDD906 /* TimeScaleView.swift */; };
+		D7F9720322E64E1D00FDD906 /* TechnoTomatoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F9720222E64E1D00FDD906 /* TechnoTomatoDataView.swift */; };
+		D7F9720522E6967D00FDD906 /* TemperatureScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F9720422E6967D00FDD906 /* TemperatureScaleView.swift */; };
+		D7F9720722E6969700FDD906 /* LeafScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F9720622E6969700FDD906 /* LeafScaleView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7F971EB22E5337700FDD906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7F971A122E507AA00FDD906 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7F971A822E507AA00FDD906;
+			remoteInfo = "Techno Tomato Manager";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D783D8F822EA0335006D05D5 /* AirTemperatureDataPlotter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirTemperatureDataPlotter.swift; sourceTree = "<group>"; };
+		D783D8FA22EA04D4006D05D5 /* RootTemperatureDataPlotter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTemperatureDataPlotter.swift; sourceTree = "<group>"; };
+		D783D8FC22EA058C006D05D5 /* LeafSensorDataPlotter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafSensorDataPlotter.swift; sourceTree = "<group>"; };
+		D783D8FE22EA0604006D05D5 /* SprayCycleDataPlotter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayCycleDataPlotter.swift; sourceTree = "<group>"; };
+		D7F047EB22E7640C0085BC8B /* PlantDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDefaultsViewController.swift; sourceTree = "<group>"; };
+		D7F971A922E507AA00FDD906 /* TechnoTomato Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TechnoTomato Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F971B522E507AB00FDD906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7F971BA22E507AB00FDD906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7F971C322E50A6400FDD906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7F971C522E50A6400FDD906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7F971C622E50A6400FDD906 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7F971D322E50B7F00FDD906 /* SensorDataPlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataPlotView.swift; sourceTree = "<group>"; };
+		D7F971E022E520EA00FDD906 /* ThingSpeakChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingSpeakChannel.swift; sourceTree = "<group>"; };
+		D7F971E622E5337700FDD906 /* TechnoTomato Viewer Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TechnoTomato Viewer Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F971E822E5337700FDD906 /* Techno_Tomato_Manager_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Techno_Tomato_Manager_Tests.swift; sourceTree = "<group>"; };
+		D7F971EA22E5337700FDD906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7F971F822E539A600FDD906 /* TechnoTomatoChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnoTomatoChannel.swift; sourceTree = "<group>"; };
+		D7F971FC22E6278800FDD906 /* PlantDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDataTableViewController.swift; sourceTree = "<group>"; };
+		D7F971FE22E629AB00FDD906 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
+		D7F9720022E64DD200FDD906 /* TimeScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeScaleView.swift; sourceTree = "<group>"; };
+		D7F9720222E64E1D00FDD906 /* TechnoTomatoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnoTomatoDataView.swift; sourceTree = "<group>"; };
+		D7F9720422E6967D00FDD906 /* TemperatureScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureScaleView.swift; sourceTree = "<group>"; };
+		D7F9720622E6969700FDD906 /* LeafScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafScaleView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7F971A622E507AA00FDD906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7F971E322E5337700FDD906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D783D8F722EA02DD006D05D5 /* Data Plotters */ = {
+			isa = PBXGroup;
+			children = (
+				D7F971D322E50B7F00FDD906 /* SensorDataPlotView.swift */,
+				D783D8F822EA0335006D05D5 /* AirTemperatureDataPlotter.swift */,
+				D783D8FA22EA04D4006D05D5 /* RootTemperatureDataPlotter.swift */,
+				D783D8FC22EA058C006D05D5 /* LeafSensorDataPlotter.swift */,
+				D783D8FE22EA0604006D05D5 /* SprayCycleDataPlotter.swift */,
+			);
+			path = "Data Plotters";
+			sourceTree = "<group>";
+		};
+		D7F971A022E507AA00FDD906 = {
+			isa = PBXGroup;
+			children = (
+				D7F971AB22E507AA00FDD906 /* TechnoTomato Viewer */,
+				D7F971E722E5337700FDD906 /* TechnoTomato Viewer Tests */,
+				D7F971AA22E507AA00FDD906 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7F971AA22E507AA00FDD906 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7F971A922E507AA00FDD906 /* TechnoTomato Viewer.app */,
+				D7F971E622E5337700FDD906 /* TechnoTomato Viewer Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7F971AB22E507AA00FDD906 /* TechnoTomato Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				D7F971B522E507AB00FDD906 /* Assets.xcassets */,
+				D7F971C022E50A6400FDD906 /* Source */,
+				D7F971BA22E507AB00FDD906 /* Info.plist */,
+			);
+			path = "TechnoTomato Viewer";
+			sourceTree = "<group>";
+		};
+		D7F971C022E50A6400FDD906 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D7F971C222E50A6400FDD906 /* LaunchScreen.storyboard */,
+				D7F971C422E50A6400FDD906 /* Main.storyboard */,
+				D7F971C622E50A6400FDD906 /* AppDelegate.swift */,
+				D7F971D522E510D200FDD906 /* Model */,
+				D7F971CE22E50AA300FDD906 /* Views */,
+				D7F971CD22E50A9600FDD906 /* Controllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D7F971CD22E50A9600FDD906 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D7F971FC22E6278800FDD906 /* PlantDataTableViewController.swift */,
+				D7F047EB22E7640C0085BC8B /* PlantDefaultsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D7F971CE22E50AA300FDD906 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7F9720222E64E1D00FDD906 /* TechnoTomatoDataView.swift */,
+				D783D8F722EA02DD006D05D5 /* Data Plotters */,
+				D7F9720022E64DD200FDD906 /* TimeScaleView.swift */,
+				D7F9720422E6967D00FDD906 /* TemperatureScaleView.swift */,
+				D7F9720622E6969700FDD906 /* LeafScaleView.swift */,
+				D7F971FE22E629AB00FDD906 /* PlantTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D7F971D522E510D200FDD906 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7F971F822E539A600FDD906 /* TechnoTomatoChannel.swift */,
+				D7F971E022E520EA00FDD906 /* ThingSpeakChannel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7F971E722E5337700FDD906 /* TechnoTomato Viewer Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D7F971E822E5337700FDD906 /* Techno_Tomato_Manager_Tests.swift */,
+				D7F971EA22E5337700FDD906 /* Info.plist */,
+			);
+			path = "TechnoTomato Viewer Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7F971A822E507AA00FDD906 /* TechnoTomato Viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7F971BD22E507AB00FDD906 /* Build configuration list for PBXNativeTarget "TechnoTomato Viewer" */;
+			buildPhases = (
+				D7F971A522E507AA00FDD906 /* Sources */,
+				D7F971A622E507AA00FDD906 /* Frameworks */,
+				D7F971A722E507AA00FDD906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TechnoTomato Viewer";
+			productName = "Techno Tomato Manager";
+			productReference = D7F971A922E507AA00FDD906 /* TechnoTomato Viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7F971E522E5337700FDD906 /* TechnoTomato Viewer Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7F971ED22E5337700FDD906 /* Build configuration list for PBXNativeTarget "TechnoTomato Viewer Tests" */;
+			buildPhases = (
+				D7F971E222E5337700FDD906 /* Sources */,
+				D7F971E322E5337700FDD906 /* Frameworks */,
+				D7F971E422E5337700FDD906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7F971EC22E5337700FDD906 /* PBXTargetDependency */,
+			);
+			name = "TechnoTomato Viewer Tests";
+			productName = "Techno Tomato Manager Tests";
+			productReference = D7F971E622E5337700FDD906 /* TechnoTomato Viewer Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7F971A122E507AA00FDD906 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "DoodleBytes Development";
+				TargetAttributes = {
+					D7F971A822E507AA00FDD906 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					D7F971E522E5337700FDD906 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D7F971A822E507AA00FDD906;
+					};
+				};
+			};
+			buildConfigurationList = D7F971A422E507AA00FDD906 /* Build configuration list for PBXProject "TechnoTomato Viewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7F971A022E507AA00FDD906;
+			productRefGroup = D7F971AA22E507AA00FDD906 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7F971A822E507AA00FDD906 /* TechnoTomato Viewer */,
+				D7F971E522E5337700FDD906 /* TechnoTomato Viewer Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7F971A722E507AA00FDD906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F971CA22E50A6400FDD906 /* Main.storyboard in Resources */,
+				D7F971B622E507AB00FDD906 /* Assets.xcassets in Resources */,
+				D7F971C922E50A6400FDD906 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7F971E422E5337700FDD906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7F971A522E507AA00FDD906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F971FF22E629AB00FDD906 /* PlantTableViewCell.swift in Sources */,
+				D7F9720522E6967D00FDD906 /* TemperatureScaleView.swift in Sources */,
+				D783D8FB22EA04D4006D05D5 /* RootTemperatureDataPlotter.swift in Sources */,
+				D7F971E122E520EA00FDD906 /* ThingSpeakChannel.swift in Sources */,
+				D783D8FD22EA058C006D05D5 /* LeafSensorDataPlotter.swift in Sources */,
+				D7F971FD22E6278800FDD906 /* PlantDataTableViewController.swift in Sources */,
+				D7F971D422E50B7F00FDD906 /* SensorDataPlotView.swift in Sources */,
+				D7F047EC22E7640C0085BC8B /* PlantDefaultsViewController.swift in Sources */,
+				D783D8FF22EA0604006D05D5 /* SprayCycleDataPlotter.swift in Sources */,
+				D783D8F922EA0335006D05D5 /* AirTemperatureDataPlotter.swift in Sources */,
+				D7F9720722E6969700FDD906 /* LeafScaleView.swift in Sources */,
+				D7F9720322E64E1D00FDD906 /* TechnoTomatoDataView.swift in Sources */,
+				D7F9720122E64DD200FDD906 /* TimeScaleView.swift in Sources */,
+				D7F971F922E539A600FDD906 /* TechnoTomatoChannel.swift in Sources */,
+				D7F971CB22E50A6400FDD906 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7F971E222E5337700FDD906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F971E922E5337700FDD906 /* Techno_Tomato_Manager_Tests.swift in Sources */,
+				D7F971F122E534D600FDD906 /* ThingSpeakChannel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7F971EC22E5337700FDD906 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7F971A822E507AA00FDD906 /* TechnoTomato Viewer */;
+			targetProxy = D7F971EB22E5337700FDD906 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7F971C222E50A6400FDD906 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7F971C322E50A6400FDD906 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D7F971C422E50A6400FDD906 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7F971C522E50A6400FDD906 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7F971BB22E507AB00FDD906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7F971BC22E507AB00FDD906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7F971BE22E507AB00FDD906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V78WBXT4VY;
+				INFOPLIST_FILE = "TechnoTomato Viewer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doodlebytes.Techno-Tomato-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7F971BF22E507AB00FDD906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V78WBXT4VY;
+				INFOPLIST_FILE = "TechnoTomato Viewer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doodlebytes.Techno-Tomato-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D7F971EE22E5337700FDD906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V78WBXT4VY;
+				INFOPLIST_FILE = "TechnoTomato Viewer Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doodlebytes.Techno-Tomato-Manager-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TechnoTomato Viewer.app/TechnoTomato Viewer";
+			};
+			name = Debug;
+		};
+		D7F971EF22E5337700FDD906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V78WBXT4VY;
+				INFOPLIST_FILE = "TechnoTomato Viewer Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doodlebytes.Techno-Tomato-Manager-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TechnoTomato Viewer.app/TechnoTomato Viewer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7F971A422E507AA00FDD906 /* Build configuration list for PBXProject "TechnoTomato Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F971BB22E507AB00FDD906 /* Debug */,
+				D7F971BC22E507AB00FDD906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7F971BD22E507AB00FDD906 /* Build configuration list for PBXNativeTarget "TechnoTomato Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F971BE22E507AB00FDD906 /* Debug */,
+				D7F971BF22E507AB00FDD906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7F971ED22E5337700FDD906 /* Build configuration list for PBXNativeTarget "TechnoTomato Viewer Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F971EE22E5337700FDD906 /* Debug */,
+				D7F971EF22E5337700FDD906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7F971A122E507AA00FDD906 /* Project object */;
+}
