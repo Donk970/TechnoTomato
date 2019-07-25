@@ -38,9 +38,8 @@ In addition to the major parts like pump, filter valves etc. you will also need 
 | ![End Cap](<Documentation/Images/Plumbing/1:4" Press End Cap.png>) | 1/4" Press Fit end cap |
 
 #### The Controller
+The controller and it's code are really the guts of the whole system.  The controller reads temperature sensors and leaf sensors over the I2C connection, executes code to decide how frequently to trigger spray cycles and, oh yeah, send data to thing speak now and then.
 ##### Major Parts:
-
-
 | Image | Description |
 | --- | --- |
 | ![Arduino Uno](Documentation/Images/Controller/ArduinoUno.png) | **Arduino Uno:** <br>I am using a standard issue Arduino Uno that I purchased through Amazon.  This is ok although if I did much more in the controller sketch memory could become an issue. |
@@ -49,5 +48,8 @@ In addition to the major parts like pump, filter valves etc. you will also need 
 | ![Relay](Documentation/Images/Controller/4ChannelRelay.png) | **Relay:** <br>It's always necessary to use a relay for turning things like solenoid valves on and off.  The valves I'm using are 12v x .25 amp so I could probably use a power transistor but I like the fact that the signal side of the relay is separate from the power side. |
 | ![ESP8266](Documentation/Images/Controller/ESP8266.png) | **Relay:** <br>I'm using an ESP8266-01 to send logging data to the ThingSpeak channel for this set of plants.  I'll go into this in more detail when I publish the ThingSpeakPortal client sketch but the esp is a very simple, generic unit that listens for data in a json format on the serial port and then transmits it to thingspeak. |
 | ![Proto Board](Documentation/Images/Controller/ProtoBoard.png) | **Proto Board:** <br>Just a basic 1/2 sized solderable proto board for organizing all the connections. |
+| ![Leaf Sensor](Documentation/Images/LeafSensor.png) | **Leaf Sensor:** <br>Leaf sensor (on a Tomato leaf).  These leaf sensors from Agrihouse are a hall effect sensor that senses the thickness of whatever is between the two halves of the sensor clip.  Basically on one side of the plastic clip is a tiny magnet and the hall effect sensor on the other.  Most hall effect sensors have a linear distance to voltage ratio so I assume these do to.  I should probably test that theory some time but for now what I'm doing seems to be working. |
 | ![Assorted Bits'n'Bobs](Documentation/Images/Controller/Plugs.png) | **Assorted Bits'n'Bobs:** <br>Pictured are some plugs that can be soldered to the proto board but there are a variety of resistors, buttons etc that complete the controller. |
-
+##### And all together now:
+This is the whole thing put together in a box.
+![Controller Box](Documentation/Images/Controller/ControllerBox.png)
