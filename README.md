@@ -38,4 +38,7 @@ In addition to the major parts like pump, filter valves etc. you will also need 
 | ![End Cap](<Documentation/Images/Plumbing/1:4" Press End Cap.png>) | 1/4" Press Fit end cap |
 
 #### The Controller
+##### Major Parts:
 
+| Image | Description |
+| --- | --- |
