@@ -40,5 +40,7 @@ In addition to the major parts like pump, filter valves etc. you will also need 
 #### The Controller
 ##### Major Parts:
 
+
 | Image | Description |
 | --- | --- |
+| ![Arduino Uno](Documentation/Images/Controller/ArduinoUno.png) | **Arduino Uno:** <br>I am using a standard issue Arduino Uno that I purchased through Amazon.  This is ok although if I did much more in the controller sketch memory could become an issue. |
