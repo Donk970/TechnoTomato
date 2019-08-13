@@ -13,6 +13,9 @@ TechnoTomato is a relatively large, complex, aeroponic project aimed at growing 
    In amongst reading sensors for three or four plants, controlling the valves for those plants, reading ambient air temperature and humidity and root temperature we are also sending data for each plant to a ThingSpeak channel once a minute.
 
 These challenges have led to a combination of hardware and software innovations including a spray system that is easy to replace if it gets clogged, a burried root chamber that stays cool, a more or less modular control board and fully asynchronous, object oriented, state driven Arduino sketch.
+### What is Aeroponics
+Aeroponics is a technique for growing plants without soil.  Unlike Hydroponics where roots are submerged in water, Aeroponics applies water (and nutrients) to the roots which are hanging in air as a fine spray.  Aeroponics isnt a new idea; Aeroponics was first used in the laboratory in the 1920's to study small root structures.  The first well publicised use of aeroponics was when "The Land" pavilion at Disney's Epcot Center opened in 1982. 
+
 ### The Spray System
 The heart of TechnoTomato is the nutrient delivery system and the Arduino that controls spray timing.  Everything else is just supporting this main function.
 #### The Plumbing
