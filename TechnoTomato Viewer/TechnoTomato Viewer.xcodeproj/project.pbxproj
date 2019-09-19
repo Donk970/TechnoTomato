@@ -11,6 +11,7 @@
 		D783D8FB22EA04D4006D05D5 /* RootTemperatureDataPlotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D8FA22EA04D4006D05D5 /* RootTemperatureDataPlotter.swift */; };
 		D783D8FD22EA058C006D05D5 /* LeafSensorDataPlotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D8FC22EA058C006D05D5 /* LeafSensorDataPlotter.swift */; };
 		D783D8FF22EA0604006D05D5 /* SprayCycleDataPlotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783D8FE22EA0604006D05D5 /* SprayCycleDataPlotter.swift */; };
+		D7BB4C6E22EBDDDB0076C57C /* CollapsibleViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BB4C6D22EBDDDB0076C57C /* CollapsibleViewManager.swift */; };
 		D7F047EC22E7640C0085BC8B /* PlantDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F047EB22E7640C0085BC8B /* PlantDefaultsViewController.swift */; };
 		D7F971B622E507AB00FDD906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F971B522E507AB00FDD906 /* Assets.xcassets */; };
 		D7F971C922E50A6400FDD906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F971C222E50A6400FDD906 /* LaunchScreen.storyboard */; };
@@ -44,6 +45,7 @@
 		D783D8FA22EA04D4006D05D5 /* RootTemperatureDataPlotter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTemperatureDataPlotter.swift; sourceTree = "<group>"; };
 		D783D8FC22EA058C006D05D5 /* LeafSensorDataPlotter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafSensorDataPlotter.swift; sourceTree = "<group>"; };
 		D783D8FE22EA0604006D05D5 /* SprayCycleDataPlotter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayCycleDataPlotter.swift; sourceTree = "<group>"; };
+		D7BB4C6D22EBDDDB0076C57C /* CollapsibleViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleViewManager.swift; sourceTree = "<group>"; };
 		D7F047EB22E7640C0085BC8B /* PlantDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDefaultsViewController.swift; sourceTree = "<group>"; };
 		D7F971A922E507AA00FDD906 /* TechnoTomato Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TechnoTomato Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F971B522E507AB00FDD906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				D7F9720422E6967D00FDD906 /* TemperatureScaleView.swift */,
 				D7F9720622E6969700FDD906 /* LeafScaleView.swift */,
 				D7F971FE22E629AB00FDD906 /* PlantTableViewCell.swift */,
+				D7BB4C6D22EBDDDB0076C57C /* CollapsibleViewManager.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				D783D8FD22EA058C006D05D5 /* LeafSensorDataPlotter.swift in Sources */,
 				D7F971FD22E6278800FDD906 /* PlantDataTableViewController.swift in Sources */,
 				D7F971D422E50B7F00FDD906 /* SensorDataPlotView.swift in Sources */,
+				D7BB4C6E22EBDDDB0076C57C /* CollapsibleViewManager.swift in Sources */,
 				D7F047EC22E7640C0085BC8B /* PlantDefaultsViewController.swift in Sources */,
 				D783D8FF22EA0604006D05D5 /* SprayCycleDataPlotter.swift in Sources */,
 				D783D8F922EA0335006D05D5 /* AirTemperatureDataPlotter.swift in Sources */,
